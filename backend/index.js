@@ -24,7 +24,7 @@
 
   // ✅ CORS configuration
   app.use(cors({
-    origin: "http://localhost:5173", // Frontend URL (Vite dev server default)
+    origin: "https://virtaul-assistant-frontend.onrender.com", // Frontend URL (Vite dev server default)
     credentials: true, // Allow sending cookies
   }));
 
