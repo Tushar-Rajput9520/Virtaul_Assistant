@@ -1,7 +1,7 @@
 // src/context/UserContext.jsx
 import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
-axios.defaults.baseURL = "https://virtaul-assistant-back.onrender.com";
+axios.defaults.baseURL = "http://localhost:8000/";
 axios.defaults.withCredentials = true; // ✅ Always send cookies
 
 export const userDataContext = createContext();
@@ -13,7 +13,7 @@ function UserContext({ children }) {
   const [selectedImage, setSelectedImage] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const serverUrl = "https://virtaul-assistant-back.onrender.com";
+  const serverUrl = "http://localhost:8000/";
 
   // ✅ Fetch current user on mount
   const handleCurrentUser = async () => {
