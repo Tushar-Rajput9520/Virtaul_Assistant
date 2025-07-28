@@ -13,7 +13,7 @@ function UserContext({ children }) {
   const [selectedImage, setSelectedImage] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const serverUrl = "http://localhost:8000";
+  const serverUrl = "https://virtaul-assistant-back.onrender.com";
 
   // ✅ Fetch current user on mount
   const handleCurrentUser = async () => {
